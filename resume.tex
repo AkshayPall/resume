@@ -82,11 +82,8 @@ $\vert$ \small Software Engineering Intern (Infrastructure)
 {\hfill \footnotesize \textit{Jan 2020 - Present}}
 \begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
   \small
-  \item Maintained and developed features for a
-    \href{https://plot.ly/online-chart-maker/}{\ul{massive SaaS app}} built with
-    React and Redux.
-  \item Contributed to the development of an e2e testing framework written in
-    Python Selenium.
+  \item Developing a distributed alerting system for fixed-income securities using Apache Solr,
+  Kafka, and Redis, 
 \end{itemize}
 
 \smolboispace
@@ -98,13 +95,9 @@ $\vert$ \small Software Engineering Intern (Distributed Database)
 {\hfill \footnotesize \textit{May 2019 - Aug 2019}}
 \begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
   \small
-  \item Added support for \textit{end-to-end exactly-once processing} semantics
-    in \href{https://apache.github.io/incubator-heron/}{\ul{Apache Heron}} by
-    implementing a variant of the two-phase commit algorithm. Details in
-    \href{https://docs.google.com/document/d/1Shqp2z-uAhsOUN2erbc2d-72wdjA8anp}{\ul{design
-        doc}}.
-  \item Designed and implemented a system (in Scala) that made Twitter's
-    interactive query infrastructure (Presto and Hive) GDPR-compliant.
+    \item Wrote a \textbf{PrestoDB} connector for \textbf{Cubrick}, an in-memory \textbf{MOLAP} DB, to leverage its low-latency with Presto's scalability and extensibility
+    \item Implemented \textbf{query filter pushdown} optimization to smartly move portion of compute to storage, reducing "scanned to returned" data ratio to as low as \textbf{1:1}
+    \item Identified maximal set of query filters to push down to table scan by converting and traversing the filters to \textbf{conjunctive normal form} at runtime
 \end{itemize}
 
 \smolboispace
@@ -116,13 +109,9 @@ $\vert$ \small Software Engineering Intern (Backend)
 {\hfill \footnotesize \textit{Sep 2018 - Dec 2018}}
 \begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
   \small
-  \item Implemented centralized authentication and path-based routing in
-    PlanGrid's Kubernetes cluster using Envoy and Istio. This greatly improved
-    developer productivity.
-  \item Built Spinnaker pipelines to allow \textit{phased rollout} for
-    ingress-related infrastructure changes.
-  \item Contributed to the effort of instrumenting distributed tracing to
-    improve visibility.
+    \item Wrote crawler for Yahoo! Calendar to find and schedule missing notifications, remediating issues for over \textbf{2 million users}
+    \item Observed and corrected bugs across Yahoo services: \textbf{message queue} (CMS), \textbf{distributed NoSQL DB} (Sherpa), and \textbf{search index} (Vespa)
+    \item Contributed to \textbf{open-source ical4j} library via bugfixes, legacy version maintenance, and test coverage improvements
 \end{itemize}
 
 \smolboispace
@@ -134,13 +123,10 @@ $\vert$ \small Software Engineering Intern (Backend)
 {\hfill \footnotesize \textit{Jan 2018 - Apr 2018}}
 \begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
   \small
-  \item Worked on the metrics submission pipeline that streams millions of data
-    points per second.
-  \item Owned the time-series metadata creation service, written in Go, by
-    ensuring its availability.
-  \item Migrated the service's IPC layer to gRPC to improve reliability.
-    Implemented consistent hashing and request termination, details in
-    \href{http://lpan.io/migrating-to-grpc}{\ul{blog post}}.
+    \item Worked on Mail Migration Framework, moving over \textbf{80M accounts} from AOL to Yahoo
+    \item Rewrote core components of framework to be multi-threaded to improve adherance to SLAs
+    \item Built CLI tool to run individual jobs on-demand for troubleshooting
+    \item Produced and consumed additional metadata for all jobs to improve \textbf{context reconstruction} on recovery
 \end{itemize}
 
 \smolboispace
@@ -148,14 +134,12 @@ $\vert$ \small Software Engineering Intern (Backend)
 \bighalfspace
 \normalsize
 \noindent \href{https://cbc.ca}{\ul{\textbf{CBC/Radio-Canada}}}
-$\vert$ \small Native Apps Developer Coop (Android Product)
+$\vert$ \small Native Apps Developer Coop (Android)
 {\hfill \footnotesize \textit{May 2017 - Aug 2017}}
 \begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
   \small
-  \item Developed many business-critical, A/B-tested, user-facing features
-    using React and Rails.
-  \item Pioneered and shipped Universe's first front-end app that consumes its
-    new GraphQL API.
+    \item Developed major UI/UX features such as a \textbf{theme engine} for the CBC News App, increasing user customization for over \textbf{400k+ MAUs}, resulting in \textbf{25\% increase} in user session time
+    \item Contributed to internal Android framework to reduce development time in sister CBC apps
 \end{itemize}
 
 \section*{Writings}{}
