@@ -75,15 +75,20 @@
     \par}
 \end{center}
 
-\section*{Experience}{}
+ \section*{Experience}{}
 \normalsize
 \noindent \href{https://bloomberg.com}{\textbf{\ul{Bloomberg}}}
 $\vert$ \small Software Engineering Intern (Infrastructure)
-{\hfill \footnotesize \textit{Jan 2020 - Present}}
+{\hfill \footnotesize \textit{Jan 2020 - April 2020}}
 \begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
   \small
-  \item Developing a distributed alerting system for fixed-income securities using Apache Solr,
-  Kafka, and Redis, 
+ 
+  \item Designed and implemented a real-time, scalable, data-agnostic distributed alerting system on custom criteria in Python utilizing Solr with Prospective Search, Kafka for event I/O, and ComDB2 for persistence
+  
+  \item Achieved sub-second SLA for 300k+ criteria/queries end-to-end for client
+  
+  \item Provided observability and alarming via metrics and rules published to Grafana
+  
 \end{itemize}
 
 \smolboispace
@@ -91,13 +96,13 @@ $\vert$ \small Software Engineering Intern (Infrastructure)
 \bighalfspace
 \normalsize
 \noindent \href{https://facebook.com}{\textbf{\ul{Facebook}}}
-$\vert$ \small Software Engineering Intern (Distributed Database)
+$\vert$ \small Software Engineering Intern (Open-Source Database)
 {\hfill \footnotesize \textit{May 2019 - Aug 2019}}
 \begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
   \small
-    \item Wrote a \textbf{PrestoDB} connector for \textbf{Cubrick}, an in-memory \textbf{MOLAP} DB, to leverage its low-latency with Presto's scalability and extensibility
-    \item Implemented \textbf{query filter pushdown} optimization to smartly move portion of compute to storage, reducing "scanned to returned" data ratio to as low as \textbf{1:1}
-    \item Identified maximal set of query filters to push down to table scan by converting and traversing the filters to \textbf{conjunctive normal form} at runtime
+    \item Wrote a PrestoDB connector for Cubrick, an in-memory MOLAP DB, to leverage its low-latency with Presto's scalability and extensibility in Java using Thrift for RPC
+    \item Implemented query filter pushdown optimization to smartly move portion of compute to storage, reducing "scanned to returned" data ratio to as low as 1:1
+    \item Identified maximal set of query filters to push down to table scan by converting and traversing the filters to conjunctive normal form at runtime
 \end{itemize}
 
 \smolboispace
@@ -105,13 +110,13 @@ $\vert$ \small Software Engineering Intern (Distributed Database)
 \bighalfspace
 \normalsize
 \noindent \href{https://mail.yahoo.com}{\textbf{\ul{Oath}}}
-$\vert$ \small Software Engineering Intern (Backend)
+$\vert$ \small Software Engineering Intern (Web Backend)
 {\hfill \footnotesize \textit{Sep 2018 - Dec 2018}}
 \begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
   \small
-    \item Wrote crawler for Yahoo! Calendar to find and schedule missing notifications, remediating issues for over \textbf{2 million users}
-    \item Observed and corrected bugs across Yahoo services: \textbf{message queue} (CMS), \textbf{distributed NoSQL DB} (Sherpa), and \textbf{search index} (Vespa)
-    \item Contributed to \textbf{open-source ical4j} library via bugfixes, legacy version maintenance, and test coverage improvements
+    \item Wrote crawler for Yahoo! Calendar to find and schedule missing notifications, remediating issues for over 2 million users in Java
+    \item Observed and corrected bugs across Yahoo services: message queue (CMS), distributed NoSQL DB (Sherpa), and search index (Vespa); and in ical4j Calendar Library
+    
 \end{itemize}
 
 \smolboispace
@@ -123,10 +128,9 @@ $\vert$ \small Software Engineering Intern (Backend)
 {\hfill \footnotesize \textit{Jan 2018 - Apr 2018}}
 \begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
   \small
-    \item Worked on Mail Migration Framework, moving over \textbf{80M accounts} from AOL to Yahoo
+    \item Worked on Mail Migration Framework, moving over 80M accounts from AOL to Yahoo
     \item Rewrote core components of framework to be multi-threaded to improve adherance to SLAs
     \item Built CLI tool to run individual jobs on-demand for troubleshooting
-    \item Produced and consumed additional metadata for all jobs to improve \textbf{context reconstruction} on recovery
 \end{itemize}
 
 \smolboispace
@@ -138,14 +142,8 @@ $\vert$ \small Native Apps Developer Coop (Android)
 {\hfill \footnotesize \textit{May 2017 - Aug 2017}}
 \begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
   \small
-    \item Developed major UI/UX features such as a \textbf{theme engine} for the CBC News App, increasing user customization for over \textbf{400k+ MAUs}, resulting in \textbf{25\% increase} in user session time
+    \item Developed major UI/UX features such as a theme engine for the CBC News App, increasing user customization for over 400k+ MAUs, resulting in 25\% increase in user session time
     \item Contributed to internal Android framework to reduce development time in sister CBC apps
-\end{itemize}
-
-\section*{Writings}{}
-\begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
-  \small
-  \item \href{http://akshaypall.me}{\ul{TODO}} 
 \end{itemize}
 
 \section*{Education}{}
