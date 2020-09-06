@@ -53,10 +53,10 @@
 \newcommand{\email}[1]{\href{mailto:#1}{\ul{#1}}}
 
 % skills
-\newcommand*{\newsummary}[2]{
-  \noindent\hangafter=0\small
-  {\capitalisewords{\textbf{#1}}: #2 \par}
-}
+% \newcommand*{\newsummary}[2]{
+%   \noindent\hangafter=0\small
+%   {\capitalisewords{\textbf{#1}}: #2 \par}
+% }
 
 % document ----------------------------------------------------------------------------
 % -------------------------------------------------------------------------------------
@@ -64,7 +64,7 @@
 
 \begin{center}
   {\fontsize{35}{40}\selectfont Akshay Pall \par}
-  \halfspace
+  \halfspace %TODO: remove this later when more space is needed
   \smolboispace
   \smolboispace
 
@@ -77,8 +77,22 @@
 
  \section*{Experience}{}
 \normalsize
+\noindent \href{https://facebook.com}{\textbf{\ul{Facebook}}}
+$\vert$ \small Software Engineering Intern
+{\hfill \footnotesize \textit{September 2020 - Present}}
+\begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
+  \small
+ 
+  \item Working on the Target Determinator (TD) which determines what to build and test as part of the continuous integration (CI) flow for Android
+
+  \item Migrating and updating TD logic from PHP implementation to a new system with declarative rules written in Starlark
+    
+\end{itemize}
+
+\bighalfspace
+\normalsize
 \noindent \href{https://bloomberg.com}{\textbf{\ul{Bloomberg}}}
-$\vert$ \small Software Engineering Intern (Infrastructure)
+$\vert$ \small Software Engineering Intern
 {\hfill \footnotesize \textit{Jan 2020 - April 2020}}
 \begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
   \small
@@ -93,50 +107,40 @@ $\vert$ \small Software Engineering Intern (Infrastructure)
   
 \end{itemize}
 
-\smolboispace
-\smolboispace
 \bighalfspace
 \normalsize
 \noindent \href{https://facebook.com}{\textbf{\ul{Facebook}}}
-$\vert$ \small Software Engineering Intern (Open-Source: PrestoDB)
+$\vert$ \small Software Engineering Intern
 {\hfill \footnotesize \textit{May 2019 - Aug 2019}}
 \begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
   \small
     \item Wrote a PrestoDB connector for Cubrick, an in-memory MOLAP DB, to leverage its low-latency with Presto's scalability and extensibility in Java using Thrift for RPC
-    \item Implemented query filter pushdown optimization to smartly move portion of compute to storage, reducing "scanned to returned" data ratio to as low as 1:1
-    \item Identified maximal set of query filters to push down to table scan by converting and traversing the filters to conjunctive normal form at runtime
+    \item Implemented query filter pushdown optimization to smartly move portion of compute to storage, reducing amount of unnecessary data pulled from source
 \end{itemize}
 
-\smolboispace
-\smolboispace
 \bighalfspace
 \normalsize
 \noindent \href{https://mail.yahoo.com}{\textbf{\ul{Oath}}}
-$\vert$ \small Software Engineering Intern (Web Backend)
+$\vert$ \small Software Engineering Intern
 {\hfill \footnotesize \textit{Sep 2018 - Dec 2018}}
 \begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
   \small
-    \item Wrote crawler for Yahoo! Calendar to find and schedule missing notifications, remediating issues for over 2 million users in Java
+    \item Wrote crawler for Yahoo Calendar to remediate missing notifications for > 2M users in Java
     \item Observed and corrected bugs across Yahoo services: message queue (CMS), distributed NoSQL DB (Sherpa), and search index (Vespa); and in ical4j Calendar Library
     
 \end{itemize}
 
-\smolboispace
-\smolboispace
 \bighalfspace
 \normalsize
 \noindent \href{https://mail.yahoo.com}{\textbf{\ul{Yahoo!}}}
-$\vert$ \small Software Engineering Intern (Backend)
+$\vert$ \small Software Engineering Intern
 {\hfill \footnotesize \textit{Jan 2018 - Apr 2018}}
 \begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
   \small
-    \item Worked on Mail Migration Framework, moving over 80M accounts from AOL to Yahoo
-    \item Rewrote core components of framework to be multi-threaded to improve adherence to SLAs
+    \item Worked on Mail Migration Framework, moving > 80M accounts from AOL to Yahoo
     \item Built CLI tool to run individual jobs on-demand for troubleshooting
 \end{itemize}
 
-\smolboispace
-\smolboispace
 \bighalfspace
 \normalsize
 \noindent \href{https://cbc.ca}{\ul{\textbf{CBC/Radio-Canada}}}
@@ -145,7 +149,6 @@ $\vert$ \small Native Apps Developer Coop (Android)
 \begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
   \small
     \item Developed major UI/UX features such as a theme engine for the CBC News App, increasing user customization for over 400k+ MAUs, resulting in 25\% increase in user session time
-    \item Contributed to internal Android framework to reduce development time in sister CBC apps
 \end{itemize}
 
 \section*{Education}{}
@@ -153,6 +156,6 @@ $\vert$ \small Native Apps Developer Coop (Android)
 \quarterspace
 \footnotesize
 \noindent \textit{Sep 2016 - May 2021 (expected)} \par
-\noindent 85\% cumulative GPA, \textit{2x Term Dean's Honours List}
+\noindent 87\% cumulative GPA, \textit{3x Term Dean's Honours List}
 
 \end{document}
