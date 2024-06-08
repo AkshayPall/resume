@@ -83,6 +83,8 @@ $\vert$ \small Software Engineering - \textit{AI/ML Infrastructure}
 \begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
     \small
     \item (Currently) Building a distributed, low-latency/realtime graph store and engine (C++) for ML usecases (eg. embeddings, ads recomendations)
+    \item Reduced cold-start time from 1 hour to minutes via custom replication \& recovery logic
+    \item Identified \& addressed feature coverage gaps via cross-system observability improvements (distributed ingestion \& request tracing, data health monitoring, etc.)
     
     \item (Previously) Contributed to a feature engineering framework (Python) that generates privacy compliant, globally optimized feature pipelines (Spark). 
     \item Launched a scalable, extensible  CI/CD system to deploy $10^{4}$s of feature changes daily
@@ -100,11 +102,7 @@ $\vert$ \small Software Engineering Intern
  
   \item Designed a real-time, data-agnostic distributed alerting system on custom criteria in Python
     
-  \item Utilized custom Solr for prospective search on criteria (Solr queries); Kafka for event I/O; and ComDB2 for persistence, authentication, and preferences
-
-  \item Maintained versioned document state in Cassandra for in/out alerting
-  
-  \item Provided observability and alarming on system metrics via Grafana
+  \item Utilized custom Solr for prospective search on criteria (Solr queries); Kafka for event I/O; ComDB2 for persistence; and Cassandra for alerting
   
 \end{itemize}
 
@@ -116,7 +114,7 @@ $\vert$ \small Software Engineering Intern
 \begin{itemize}[noitemsep,leftmargin=20pt,label=\raisebox{0.25ex}{\tiny$\bullet$},topsep=5pt]
   \small
     \item Wrote a PrestoDB connector for Cubrick, an in-memory MOLAP DB, to leverage its low-latency with Presto's scalability and extensibility in Java using Thrift for RPC
-    \item Implemented query filter pushdown optimization to smartly move portion of compute to storage, reducing amount of unnecessary data pulled from source
+    \item Implemented query filter pushdown optimizations to move portion of compute to storage
 \end{itemize}
 
 \bighalfspace
@@ -146,6 +144,6 @@ $\vert$ \small \textit{Yet Another Docs App}
 \noindent \textbf{University of Waterloo} Bachelor of Software Engineering \par
 \quarterspace
 \footnotesize
-\noindent \textit{Sep 2016 - May 2021} - Dean's Honours List
+\noindent \textit{Sep 2016 - May 2021} - With Distinction, Dean's Honours List
 
 \end{document}
